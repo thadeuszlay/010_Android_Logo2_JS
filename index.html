@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+	<link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+		<style>
+			.andy{				
+				height: 175px;
+				width: 216px;
+				background-color:rgba(100, 200, 10, 1);
+				border-radius: 0 0 20px 20px; 
+				position: relative;	
+				left: 100px;
+				top: 110px; 		
+				margin: 70px;
+				display: inline-block;			
+			}
+
+			.andy::before{
+				content: "";
+				color: white;
+				width: 50px;
+				height: 150px;
+   			background-color: rgba(100, 200, 10, 1);
+   			position: absolute;
+   			left: -60px;
+				border-radius:50px;   			
+   			box-shadow:     
+   				285px 0 0 rgba(100, 200, 10, 1),
+    				190px 110px 0 rgba(100, 200, 10, 1),
+    				95px 110px 0 rgba(100, 200, 10, 1);
+    		}
+    		.andy::after{
+				content: "\0000a0V";
+				color: rgba(100, 200, 10, 1);
+				font-size: 140px;	
+				font-family: 'Orbitron', sans-serif;
+				line-height: 60px;
+				width: 216px;
+				height: 108px;
+   			background-color: rgba(100, 200, 10, 1);
+   			position: absolute;
+   			left: 0px;
+   			top: -118px;
+   			border-radius: 216px 216px 0 0; 
+   			background: radial-gradient(circle, white 10%, transparent 0%), rgba(100, 200, 10, 1);
+   			background-size: 50% 100%;
+        	}
+        	@keyframes move{
+				10% {
+					top: 	100px;
+					left: 90px;
+				}
+				40%{
+					top: 90px;	
+					left: 70px;
+				}
+				70%{
+					top: 120px;
+					left: 110px;
+				}
+				90%{
+					top: 100px;
+					left: 120px;
+				}
+			}
+        	@-moz-keyframes move{
+				10% {
+					top: 	100px;
+					left: 90px;
+				}
+				40%{
+					top: 90px;	
+					left: 70px;
+				}
+				70%{
+					top: 120px;
+					left: 110px;
+				}
+				90%{
+					top: 100px;
+					left: 120px;
+				}
+			}
+        	@-webkit-keyframes move{
+				10% {
+					top: 	100px;
+					left: 90px;
+				}
+				40%{
+					top: 90px;	
+					left: 70px;
+				}
+				70%{
+					top: 120px;
+					left: 110px;
+				}
+				90%{
+					top: 100px;
+					left: 120px;
+				}
+			}
+			.action{
+			animation: move 2s infinite;
+			}		
+		</style>
+		<div class="andy" id="domo"></div>	
+<script type="text/javascript">
+function toggleClass(element, className){
+    if (!element || !className){
+        return;
+    }
+    
+    var classString = element.className, nameIndex = classString.indexOf(className);
+    if (nameIndex == -1) {
+        classString += ' ' + className;
+    }
+    else {
+        classString = classString.substr(0, nameIndex) + classString.substr(nameIndex+className.length);
+    }
+    element.className = classString;
+}
+document.getElementById("domo").addEventListener("click", function(){
+    toggleClass(document.getElementById("domo"), ' action');    
+});
+</script>
