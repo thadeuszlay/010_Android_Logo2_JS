@@ -176,7 +176,7 @@ document.getElementsByTagName('body')[0].onkeydown = function(e) {
 
 		// Use addRule or insertRule to inject styles
 		if("insertRule" in sheet) {
-			sheet.insertRule('.andy:before { background-color: purple; }', 0);
+			sheet.insertRule('.andy:before { top: -110px; }', 0);
 			
 			document.getElementById("domo").style.backgroundColor = "rgba(100, 200, 10, 1)";
 			sheet.insertRule('.andy:before {box-shadow: 285px 0 0 rgba(100, 200, 10, 1), 190px 110px 0 rgba(100, 200, 10, 1), 95px 110px 0 rgba(100, 200, 10, 1);;}', 0);
