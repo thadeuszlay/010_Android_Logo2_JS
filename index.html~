@@ -140,6 +140,7 @@ document.getElementById("domo").addEventListener("click", function(){
 });
 document.getElementsByTagName('body')[0].onkeydown = function(e) { 
    var ev = e || window.event;
+   //body/stomach
     if (ev.keyCode===83){
 		// Create a new style tag
 		var style = document.createElement("style");
@@ -152,18 +153,13 @@ document.getElementsByTagName('body')[0].onkeydown = function(e) {
 
 		// Use addRule or insertRule to inject styles
 		if("insertRule" in sheet) {
-			sheet.insertRule('.andy:before { background-color: rgba(100, 200, 10, 1); }', 0);
+			sheet.insertRule('.andy:before { top: 0px; }', 0);
 			
 			sheet.insertRule('.andy:before {box-shadow: 285px 0 0 rgba(100, 200, 10, 1), 190px 110px 0 rgba(100, 200, 10, 1), 95px 110px 0 rgba(100, 200, 10, 1);;}', 0);
-			sheet.insertRule('.andy:after {background-color: rgba(100, 200, 10, 1);}', 0);
-		}
-    
-    
-        document.getElementById("domo").style.backgroundColor = "red";
-        
-        
+			sheet.insertRule('.andy:after {background-size: 50% 140%;}', 0);		
+		}        
     }
-    
+    //left arm
     else if(ev.keyCode===65){
 		// Create a new style tag
 		var style = document.createElement("style");
@@ -178,14 +174,11 @@ document.getElementsByTagName('body')[0].onkeydown = function(e) {
 		if("insertRule" in sheet) {
 			sheet.insertRule('.andy:before { top: -110px; }', 0);
 			
-			document.getElementById("domo").style.backgroundColor = "rgba(100, 200, 10, 1)";
-			sheet.insertRule('.andy:before {box-shadow: 285px 0 0 rgba(100, 200, 10, 1), 190px 110px 0 rgba(100, 200, 10, 1), 95px 110px 0 rgba(100, 200, 10, 1);;}', 0);
-			sheet.insertRule('.andy:after {background-color: rgba(100, 200, 10, 1);}', 0);
-		}
-		else if("addRule" in sheet) {
-			sheet.addRule('.andy:before','background-color: pruple;');
+			sheet.insertRule('.andy:before {box-shadow: 285px 110px 0 rgba(100, 200, 10, 1), 190px 220px 0 rgba(100, 200, 10, 1), 95px 220px 0 rgba(100, 200, 10, 1);;}', 0);
+			sheet.insertRule('.andy:after {background-size: 50% 100%;}', 0);		
 		}
 	 }
+	 //brain/eyes
 	 else if(ev.keyCode===87){
 		var style = document.createElement("style");
 
@@ -197,16 +190,13 @@ document.getElementsByTagName('body')[0].onkeydown = function(e) {
 
 		// Use addRule or insertRule to inject styles
 		if("insertRule" in sheet) {
-			sheet.insertRule('.andy:before { background-color: rgba(100, 200, 10, 1); }', 0);			
-			document.getElementById("domo").style.backgroundColor = "rgba(100, 200, 10, 1)";
+			sheet.insertRule('.andy:before { top: 0px; }', 0);
 			sheet.insertRule('.andy:before {box-shadow: 285px 0 0 rgba(100, 200, 10, 1), 190px 110px 0 rgba(100, 200, 10, 1), 95px 110px 0 rgba(100, 200, 10, 1);}', 0);
 			
-			sheet.insertRule('.andy:after {background-size: 50% 150%;}', 0);		
-		}
-		else if("addRule" in sheet) {
-			sheet.addRule('.andy:after','background-color: yellow;');
+			sheet.insertRule('.andy:after {background-size: 50% 75%;}', 0);		
 		}
 	 }
+	//right arm
 	 else if(ev.keyCode===68){
 		var style = document.createElement("style");
 
@@ -218,16 +208,12 @@ document.getElementsByTagName('body')[0].onkeydown = function(e) {
 
 		// Use addRule or insertRule to inject styles
 		if("insertRule" in sheet) {
-			sheet.insertRule('.andy:before { background-color: rgba(100, 200, 10, 1); }', 0);			
-			document.getElementById("domo").style.backgroundColor = "rgba(100, 200, 10, 1)";
-			sheet.insertRule('.andy:after {background-color: rgba(100, 200, 10, 1);}', 0);
-
+			sheet.insertRule('.andy:before { top: 0px; }', 0);
+			sheet.insertRule('.andy:after {background-size: 50% 100%;}', 0);		
 			sheet.insertRule('.andy:before {box-shadow: 285px -110px 0 rgba(100, 200, 10, 1), 190px 110px 0 rgba(100, 200, 10, 1), 95px 110px 0 rgba(100, 200, 10, 1);;}', 0);
 		}
-		else if("addRule" in sheet) {
-			sheet.addRule('.andy:before','box-shadow: 285px 0 0 blue, 190px 110px 0 rgba(100, 200, 10, 1), 95px 110px 0 rgba(100, 200, 10, 1);');
-		}
 	 }
+	 //right leg
  	 else if(ev.keyCode===88){
 		var style = document.createElement("style");
 
@@ -239,16 +225,13 @@ document.getElementsByTagName('body')[0].onkeydown = function(e) {
 
 		// Use addRule or insertRule to inject styles
 		if("insertRule" in sheet) {
-			sheet.insertRule('.andy:before { background-color: rgba(100, 200, 10, 1); }', 0);			
-			document.getElementById("domo").style.backgroundColor = "rgba(100, 200, 10, 1)";
-			sheet.insertRule('.andy:after {background-color: rgba(100, 200, 10, 1);}', 0);
-
+			sheet.insertRule('.andy:before { top: 0px; }', 0);
+			sheet.insertRule('.andy:after {background-size: 50% 100%;}', 0);		
+			
 			sheet.insertRule('.andy:before {box-shadow: 285px 0 0 rgba(100, 200, 10, 1), 190px 130px 0 rgba(100, 200, 10, 1), 95px 110px 0 rgba(100, 200, 10, 1);}', 0);
 		}
-		else if("addRule" in sheet) {
-			sheet.addRule('.andy:before','box-shadow: 285px 0 0 rgba(100, 200, 10, 1), 190px 130px 0 rgba(100, 200, 10, 1), 95px 110px 0 rgba(100, 200, 10, 1);');
-		}
 	 }	 
+	 //left leg
  	 else if(ev.keyCode===89){
 		var style = document.createElement("style");
 
@@ -260,14 +243,10 @@ document.getElementsByTagName('body')[0].onkeydown = function(e) {
 
 		// Use addRule or insertRule to inject styles
 		if("insertRule" in sheet) {
-			sheet.insertRule('.andy:before { background-color: rgba(100, 200, 10, 1); }', 0);			
-			document.getElementById("domo").style.backgroundColor = "rgba(100, 200, 10, 1)";
-			sheet.insertRule('.andy:after {background-color: rgba(100, 200, 10, 1);}', 0);
-
+			sheet.insertRule('.andy:before { top: 0px; }', 0);
+			sheet.insertRule('.andy:after {background-size: 50% 100%;}', 0);		
+			
 			sheet.insertRule('.andy:before {box-shadow: 285px 0 0 rgba(100, 200, 10, 1), 190px 110px 0 rgba(100, 200, 10, 1), 95px 130px 0 rgba(100, 200, 10, 1);}', 0);
-		}
-		else if("addRule" in sheet) {
-			sheet.addRule('.andy:before','box-shadow: 285px 0 0 rgba(100, 200, 10, 1), 190px 110px 0 rgba(100, 200, 10, 1), 95px 120px 0 rgba(100, 200, 10, 1);');
 		}
 	 }	 
 }
