@@ -1,0 +1,6 @@
+var main=function () {
+	$(".andy").click(function () {
+		$(this).toggleClass("action");
+	});
+}
+$(document).ready(main);
